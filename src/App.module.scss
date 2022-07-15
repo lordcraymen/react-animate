@@ -1,0 +1,55 @@
+.disabled {
+    &, & * {
+        pointer-events: none;
+        cursor: default;
+    }
+}
+
+.td {
+    color: red
+}
+
+.fadeOut {
+    animation: fadeOutAnim 0.3s forwards;
+}
+
+.fadeIn {
+    animation: fadeOutAnim 0.3s reverse forwards;
+}
+
+
+@keyframes fadeOutAnim {
+    from { opacity: inherit; }
+    to { opacity: 0;}
+}
+
+.contenbox {
+    width: 300px;
+}
+
+.testclass {
+    --testattribute: 5%;
+    width: 100%;
+    color: red;
+}
+
+
+.testanimation {
+    animation-fill-mode: forwards, forwards;
+    animation-duration: 1000ms, 1000ms;
+    animation-name: test2, test;
+    animation-play-state: paused, paused;
+    animation-timing-function: linear, linear;
+}
+
+.testanimation2 {
+    animation-delay:-1000ms,-1000ms;
+}
+
+@keyframes test {
+    from { opacity: 0; transform: translateY(200px)  }
+}
+
+@keyframes test2 {
+    to { opacity: 0; transform: translateY(200px) }
+}

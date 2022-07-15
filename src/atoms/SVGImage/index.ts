@@ -1,0 +1,1 @@
+export { SVGImage } from "./SVGImage"

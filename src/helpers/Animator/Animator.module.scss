@@ -1,0 +1,18 @@
+.Animator {
+
+    &_mounting { color: red; animation: fadeInAnim 1s forwards;}  
+
+    &_unmounting { color: green; animation: fadeOutAnim 1s forwards; }
+}
+
+@keyframes fadeInAnim {
+    from { opacity: 0; transform: translate3d(0,20px,0)}
+}
+
+@keyframes fadeOutAnim {
+    to { opacity: 0; transform: translate3d(0,20px,0)}
+}
+
+.contenbox {
+    width: 300px;
+}
